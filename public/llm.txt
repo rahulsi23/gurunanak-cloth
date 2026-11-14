@@ -1,0 +1,161 @@
+# Gurunanak Cloth House - AEO / GEO AI Knowledge Base
+This document provides a highly detailed clean text representation of our entire storefront architecture, inventory, and policies for AI web crawlers (ChatGPT, Claude, Google Gemini).
+
+## Core Store Information
+- Store Name: Gurunanak Cloth House
+- Website: http://127.0.0.1:8000
+- Niche: Premium Luxury Clothing & Apparel
+- Description: A premium fashion brand creating clean, simple, and elegant clothing designed for everyday comfort and ultimate modern beauty.
+
+## Product Catalog
+
+### Tailored Mid-Weight Woolen Blazer
+- URL: http://127.0.0.1:8000/product/detail/blazer
+- Price: $420.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Beige Signature Structural Trench
+- URL: http://127.0.0.1:8000/product/detail/trench
+- Price: $290.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Soft Minimalist Lounge Hoodie
+- URL: http://127.0.0.1:8000/product/detail/hoodie
+- Price: $160.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Flax Cotton Overshirt
+- URL: http://127.0.0.1:8000/product/detail/overshirt
+- Price: $145.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Double Breasted Minimalist Wool Coat
+- URL: http://127.0.0.1:8000/product/detail/coat
+- Price: $380.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Refined Raw Silk Drape Blouse
+- URL: http://127.0.0.1:8000/product/detail/blouse
+- Price: $145.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Sleek Minimalist Column Dress
+- URL: http://127.0.0.1:8000/product/detail/dress
+- Price: $240.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Wide Leg Pleated Woolen Trousers
+- URL: http://127.0.0.1:8000/product/detail/trousers
+- Price: $195.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Cashmere Blend Minimalist Knitwear
+- URL: http://127.0.0.1:8000/product/detail/knitwear
+- Price: $210.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Minimalist Core Ribbed Crewneck
+- URL: http://127.0.0.1:8000/product/detail/crewneck
+- Price: $110.00
+- Subtitle/Category: General
+- Description: Premium tailored structure offering effortless elegance.
+
+### Minimalist Core Trench
+- URL: http://127.0.0.1:8000/product/detail/women-trench-1
+- Price: $290.00
+- Subtitle/Category: Outerwear Studio
+- Description: Breathable organic structure offering superior drape and weather presence.
+
+### Refined Raw Silk Blouse
+- URL: http://127.0.0.1:8000/product/detail/women-blouse-1
+- Price: $140.00
+- Subtitle/Category: Blouses Atelier
+- Description: Delicate pure mulberry thread finished with minimalist concealed plackets.
+
+### Structured Column Dress
+- URL: http://127.0.0.1:8000/product/detail/women-dress-1
+- Price: $310.00
+- Subtitle/Category: Dresses Atelier
+- Description: Architectural columnar line emphasizing seamless natural geometry.
+
+### Heavy Ribbed Cashmere Knit
+- URL: http://127.0.0.1:8000/product/detail/women-knit-1
+- Price: $240.00
+- Subtitle/Category: Knitwear Studio
+- Description: Ultra-soft hand-loomed grade 1 cashmere fibers optimized for layering.
+
+### Bespoke Double-Breasted Jacket
+- URL: http://127.0.0.1:8000/product/detail/men-suit-1
+- Price: $450.00
+- Subtitle/Category: Tailoring Atelier
+- Description: Sharp Neapolitan shoulder line handcrafted using premium fine Italian merino.
+
+### Heavy Wool Overcoat
+- URL: http://127.0.0.1:8000/product/detail/men-outerwear-1
+- Price: $520.00
+- Subtitle/Category: Outerwear Studio
+- Description: Dense protective Melton wool weave structure delivering absolute thermal retention.
+
+### Minimalist Cable Sweater
+- URL: http://127.0.0.1:8000/product/detail/men-knit-1
+- Price: $195.00
+- Subtitle/Category: Knitwear Atelier
+- Description: Traditional dense fisherman stitch re-engineered with clean soft margins.
+
+### Pure Resort Linen Tunic
+- URL: http://127.0.0.1:8000/product/detail/summer-linen-1
+- Price: $125.00
+- Subtitle/Category: Linens Edition
+- Description: Lightweight raw flax spun into breezy loose leisure volumes.
+
+### Silk Plissé Halter Sundress
+- URL: http://127.0.0.1:8000/product/detail/summer-sundress-1
+- Price: $280.00
+- Subtitle/Category: Sundresses Collection
+- Description: Sun-drenched dynamic pleats engineered for striking evening poolside silhouettes.
+
+### Minimalist Core Oversize Hoodie
+- URL: http://127.0.0.1:8000/product/detail/streetwear-hoodie-1
+- Price: $160.00
+- Subtitle/Category: Hoodies Atelier
+- Description: Heavyweight 500gsm brushed loopback jersey complete with signature drop drop shoulder.
+
+### Urban Utility Jacket
+- URL: http://127.0.0.1:8000/product/detail/streetwear-jacket-1
+- Price: $290.00
+- Subtitle/Category: Outerwear Lab
+- Description: Technical washed garment-dyed nylon housing optimized multi-angle internal access vector storage.
+
+### Boxy Structured Coat
+- URL: http://127.0.0.1:8000/product/detail/oversized-coat-1
+- Price: $340.00
+- Subtitle/Category: Tailored Volumes
+- Description: Dramatic architectural drop lines maximizing contemporary overlay dominance.
+
+### Heavy Knit Oversized Sweater
+- URL: http://127.0.0.1:8000/product/detail/oversized-knit-1
+- Price: $190.00
+- Subtitle/Category: Knitwear Studio
+- Description: Loose soft gauge weave structure bringing maximum comfort ease.
+
+### Structured Grain Handbag
+- URL: http://127.0.0.1:8000/product/detail/accessories-bag-1
+- Price: $380.00
+- Subtitle/Category: Leather Goods
+- Description: Sculptural top-handle profile finished with matching polished gold structural clasps.
+
+### Minimalist Core Eyewear
+- URL: http://127.0.0.1:8000/product/detail/accessories-eyewear-1
+- Price: $165.00
+- Subtitle/Category: Eyewear Studio
+- Description: Thick lightweight acetate block components delivering classic aesthetic shielding.
+

@@ -1,0 +1,29 @@
+databases:
+  - name: gurunanak-db
+    databaseName: gurunanak_cloth
+    user: gurunanak_user
+    plan: free
+
+services:
+  - type: web
+    name: gurunanak-cloth-house
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: APP_NAME
+        value: "Guru Nanak Cloth House"
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        value: "base64:mYkcUuoWpp3QJ+TjCo/mBjTTuSpqiyudrKaJGe8Wrpo="
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DATABASE_URL
+        fromDatabase:
+          name: gurunanak-db
+          property: connectionString
+      - key: LOG_CHANNEL
+        value: stderr
