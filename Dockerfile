@@ -21,8 +21,8 @@ WORKDIR /var/www/html
 # Copy application files
 COPY . .
 
-# Install production PHP dependencies
-RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+# Install production PHP dependencies without running scripts that require database
+RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts
 
 # Set permissions for Laravel directories
 RUN chown -R www-data:www-data storage bootstrap/cache \
@@ -34,7 +34,7 @@ ENV APP_DEBUG=false
 ENV LOG_CHANNEL=stderr
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
-EXPOSE 80
+EXPOSE 80 10000
 
 CMD ["/start.sh"]
 

@@ -93,7 +93,7 @@ class AppServiceProvider extends ServiceProvider
                     ]
                 );
             }
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             // Silence
         }
 
@@ -117,7 +117,7 @@ class AppServiceProvider extends ServiceProvider
                     }
                 }
             }
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             // Silence
         }
 
@@ -140,7 +140,7 @@ class AppServiceProvider extends ServiceProvider
                     ->get();
                 \Illuminate\Support\Facades\View::share('footerMenus', $footerMenus);
             }
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             // Silence any pre-migration database exceptions
         }
 
@@ -167,7 +167,7 @@ class AppServiceProvider extends ServiceProvider
                     ]);
                 }
             }
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             // Silence database Exceptions
         }
 
@@ -177,7 +177,7 @@ class AppServiceProvider extends ServiceProvider
                 $salesChannels = \App\Models\SalesChannel::all();
                 \Illuminate\Support\Facades\View::share('salesChannels', $salesChannels);
             }
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             // Silence database Exceptions
         }
 
@@ -250,7 +250,7 @@ class AppServiceProvider extends ServiceProvider
                     }
                 });
             }
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             // Silence database exceptions during boot phase
         }
     }
