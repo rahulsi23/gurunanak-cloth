@@ -10,7 +10,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libsqlite3-dev \
     libicu-dev \
     libpq-dev \
-    && docker-php-ext-install pdo_mysql pdo_pgsql intl zip pcntl bcmath \
+    libgmp-dev \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo_mysql pdo_pgsql intl zip pcntl bcmath gmp gd \
     && a2enmod rewrite \
     && rm -rf /var/lib/apt/lists/*
 
@@ -29,8 +34,9 @@ RUN sed -i 's/Listen 80/Listen 80\nListen 10000/' /etc/apache2/ports.conf \
 WORKDIR /var/www/html
 COPY . .
 
-# Install PHP dependencies without scripts that need DB
-RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts
+# Allow composer to run as root and bypass platform check during build
+ENV COMPOSER_ALLOW_SUPERUSER=1
+RUN composer install --ignore-platform-reqs --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts
 
 # Permissions
 RUN chown -R www-data:www-data storage bootstrap/cache \

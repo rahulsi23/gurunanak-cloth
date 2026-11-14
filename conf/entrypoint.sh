@@ -20,3 +20,4 @@ php artisan view:cache || true
 
 echo "=== Launching Apache Server ==="
 exec apache2-foreground
+
