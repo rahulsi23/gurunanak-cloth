@@ -1,9 +1,3 @@
-databases:
-  - name: gurunanak-db
-    databaseName: gurunanak_cloth
-    user: gurunanak_user
-    plan: free
-
 services:
   - type: web
     name: gurunanak-cloth-house
@@ -20,10 +14,8 @@ services:
       - key: APP_KEY
         value: "base64:mYkcUuoWpp3QJ+TjCo/mBjTTuSpqiyudrKaJGe8Wrpo="
       - key: DB_CONNECTION
-        value: pgsql
-      - key: DATABASE_URL
-        fromDatabase:
-          name: gurunanak-db
-          property: connectionString
+        value: sqlite
+      - key: DB_DATABASE
+        value: /var/www/html/database/database.sqlite
       - key: LOG_CHANNEL
         value: stderr

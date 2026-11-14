@@ -38,3 +38,4 @@ php artisan view:cache || true
 
 echo "=== Launching Nginx & PHP-FPM ==="
 exec /usr/bin/supervisord -c /etc/supervisord.conf
+
